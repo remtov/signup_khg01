@@ -55,6 +55,17 @@
 	height: 17px;
 	width: auto;
 }
+
+.head-nav_logo-img {
+	margin-top: -5px;
+	height: 30px;
+	width: auto;
+}
+
+.head-menu_welcome-logo {
+	height: 17px;
+	width: auto;
+}
 </style>
 </head>
 
@@ -80,9 +91,8 @@
 							class="icon-bar"></span>
 					</button>
 					<!-- 여기에 이미지 넣으면 로고된다 -->
-					<a class="navbar-brand" href="/"><img alt="Brand"
-						style="margin-top: -5px; height: 30px; width: auto;"
-						src="/img/logo.png"></a>
+					<a class="navbar-brand" href="/"><img class="head-nav_logo-img"
+						alt="Brand" src="/img/logo.png"></a>
 					<!-- 여기에 이미지 넣으면 로고된다 글넣으면 글되고 -->
 				</div>
 				<!-- 로고영역 -->
@@ -156,8 +166,8 @@
 
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-expanded="false">
-										나의 <img class="head-nav_menu-img" src="/img/logo.png"
-										style="width: 30px; height: auto;"><span class="caret"></span>
+										나의 <img class="head-nav_menu-img" src="/img/logo.png"><span
+										class="caret"></span>
 								</a>
 									<ul class="dropdown-menu" role="menu">
 										<li><a href="#">대시보드</a></li>
@@ -184,7 +194,7 @@
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-expanded="false">
 										<b>${sessionScope.userLoginInfo.signupName}</b>님 환영합니다.<img
-										src="/img/icon_profile.png" style="height: 17px; width: auto;">
+										src="/img/icon_profile.png" class="head-menu_welcome-logo">
 										<span class="caret"></span>
 								</a>
 									<ul class="dropdown-menu" role="menu">
